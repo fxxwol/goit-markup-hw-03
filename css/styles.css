@@ -45,15 +45,19 @@ p {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  outline: 2px solid tomato;
-}
-
-.container.flex {
-  display: flex;
+  /* outline: 2px solid tomato; */
   align-items: center;
 }
 
-.container.flex > .item {
+.flex {
+  display: flex;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.container > .item {
   display: flex;
   align-items: center;
 }
@@ -290,6 +294,10 @@ p {
   margin-bottom: 34px;
 }
 
+.ghost-title {
+  display: none;
+}
+
 .list.flex {
   display: flex;
   justify-content: center;
@@ -313,8 +321,17 @@ p {
   color: var(--white);
 }
 
+.examples {
+  margin-bottom: 94px;
+}
+
 .work {
   margin-top: 20px;
+  margin-right: 30px;
+}
+
+.work:nth-child(3n) {
+  margin: 0;
 }
 
 .work-title {
